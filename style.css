@@ -1,0 +1,14 @@
+.btn{
+     margin: 1rem;
+} 
+
+#hero{
+     margin-top: 3rem;
+   
+}
+
+
+#hero h1{
+     margin: 1rem;
+     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}

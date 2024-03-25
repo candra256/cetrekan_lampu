@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>cetrekan lampu</title>
+     <!-- css -->
+     <link rel="stylesheet" href="style.css">
+     <!-- boostrap -->
+     <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+</head>
+<body>
+
+
+     <div id="hero" class="container text-center text-bg-secondary p-3 ">
+          <div class="row">
+            <div class="col">
+               <img  id='lampu1' src="aset/images/lampu1/off.gif" alt="">
+               <h1> yellow light </h1>
+               <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                    <button id='btn' type="button" class="btn btn-dark" onclick="saklar('on')"> nyalakan lampu </button>
+                    <button type="button" class="btn btn-dark" onclick="saklar('of')"> matikan lampu </button>
+                    
+               </div>
+            </div>
+            <div class="col">
+               <img  id='lampu2' src="aset/images/lampu2/off2.gif" alt="">
+               <h1> blue light </h1>
+             
+          
+               <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                    <button id='btn' type="button" class="btn btn-dark" onclick="saklar2('on')"> nyalakan lampu </button>
+                    <button type="button" class="btn btn-dark" onclick="saklar2('of')"> matikan lampu </button>
+                    
+               </div>
+             
+            </div>
+            <div class="col">
+               <img  id='lampu3' src="aset/images/lampu3/off3.gif" alt="">
+               <h1> red light</h1>
+             
+          
+               <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                    <button id='btn' type="button" class="btn btn-dark" onclick="saklar3('on')"> nyalakan lampu </button>
+                    <button type="button" class="btn btn-dark" onclick="saklar3('of')"> matikan lampu </button>
+                    
+               </div>
+            
+            </div>
+          </div>
+     </div>
+
+<script>
+     function saklar(params) {
+          console.log(params)
+          let lampu1 = document.getElementById("lampu1");
+          if(params== "on"){
+               lampu1.src = "aset/images/lampu1/on.gif";
+
+          }
+          if(params == "of"){
+               lampu1.src = "aset/images/lampu1/off.gif";
+
+          }
+          return lampu1
+     }   
+
+     function saklar2(params) {
+          console.log(params)
+          let lampu2 = document.getElementById("lampu2");
+          if(params== "on"){
+               lampu2.src = "aset/images/lampu2/on2.gif";
+
+          }
+          if(params == "of"){
+               lampu2.src = "aset/images/lampu2/off2.gif";
+
+          }
+          return lampu2
+     }  
+
+     function saklar3(params) {
+          console.log(params)
+          let lampu3 = document.getElementById("lampu3");
+          if(params== "on"){
+               lampu3.src = "aset/images/lampu3/on3.gif";
+
+          }
+          if(params == "of"){
+               lampu3.src = "aset/images/lampu3/off3.gif";
+
+          }
+          return lampu3
+     }  
+</script>
+
+</body>
+</html>
